@@ -7,7 +7,7 @@ server:
 
 dubbo:
   scan:
-    base-packages: com.example.testing.service
+    base-packages: com.example.testing.controller
   protocols:
     dubbo:
       name: dubbo
@@ -15,8 +15,7 @@ dubbo:
   registry:
     address: spring-cloud://47.98.62.6:8848
   application:
-    qos:
-      enable: false
+    qos-enable: false
   cloud:
     subscribed-services: testing-provider-example
 
